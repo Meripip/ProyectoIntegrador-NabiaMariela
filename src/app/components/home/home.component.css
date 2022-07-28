@@ -2,35 +2,39 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
     color: #333;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
+  body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
   }
-
-
-  p {
-    margin: 0;
-  }
-
+ 
   #hero{
     color: rgb(240, 250, 255);
     width: 100%;
-    padding: 2% 25%;
+    min-height: 100vh;
+    background-image:  url(https://www.wallpaperuse.com/wallp/83-838364_m.jpg);
+    background-position: center;
+    object-fit:contain; 
+    background-size: cover; 
     text-align: center;
+    flex-grow: 1;
+    padding: 10%;
+  
   }
 
-  .spacer {
-    flex: 1;
-  }
+
+h1{
+
+  font-family: sans-serif;
+	perspective: 1000px; 
+}
 
   .toolbar {
     position: absolute;
@@ -40,60 +44,20 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #1976d2;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     font-weight: 600;
     padding-left: 25%;
     padding-right: 5%;
   }
 
-  .toolbar img {
-    margin: 0 16px;
+   .toolbar img {
+    /* border: 0.1rem solid white; */
+    margin-top: 1rem;
+   
   }
 
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
-
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
-    opacity: 0.8;
-  }
-
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  svg.material-icons {
-    height: 24px;
-    width: auto;
-  }
-
-  svg.material-icons:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  .card svg.material-icons path {
-    fill: #888;
-  }
-
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
-  }
 
   .card {
     all: unset;
@@ -112,15 +76,6 @@
     line-height: 24px;
   }
 
-  .card-container .card:not(:last-child) {
-    margin-right: 0;
-  }
-
-  .card.card-small {
-    height: 16px;
-    width: 168px;
-  }
-
   .card-container .card:not(.highlight-card) {
     cursor: pointer;
   }
@@ -134,70 +89,12 @@
     fill: rgb(105, 103, 103);
   }
 
-  .card.highlight-card {
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    border: none;
-    width: auto;
-    min-width: 30%;
-    position: relative;
-  }
-
-  .card.card.highlight-card span {
-    margin-left: 60px;
-  }
-
-  svg#rocket {
-    width: 80px;
-    position: absolute;
-    left: -10px;
-    top: -24px;
-  }
-
   svg#rocket-smoke {
     height: calc(100vh - 95px);
     position: absolute;
     top: 10px;
     right: 180px;
     z-index: -10;
-  }
-
-  a,
-  a:visited,
-  a:hover {
-    color: #1976d2;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #125699;
-  }
-
-  .terminal {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 6px;
-    padding-top: 45px;
-    margin-top: 8px;
-    overflow: hidden;
-    background-color: rgb(15, 15, 16);
-  }
-
-  .terminal::before {
-    content: "\2022 \2022 \2022";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4px;
-    background: rgb(58, 58, 58);
-    color: #c2c3c4;
-    width: 100%;
-    font-size: 2rem;
-    line-height: 0;
-    padding: 14px 0;
-    text-indent: 4px;
   }
 
   .terminal pre {
@@ -251,27 +148,6 @@
     margin-left: 4px;
     font-weight: 600;
   }
-
-  .github-star-badge:hover {
-    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-    border-color: rgba(27,31,35,.35);
-    background-position: -.5em;
-  }
-
-  .github-star-badge .material-icons {
-    height: 16px;
-    width: 16px;
-    margin-right: 4px;
-  }
-
-  svg#clouds {
-    position: fixed;
-    bottom: -160px;
-    left: -230px;
-    z-index: -10;
-    width: 1920px;
-  }
-  
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
