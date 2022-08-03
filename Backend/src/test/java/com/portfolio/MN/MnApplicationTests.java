@@ -1,10 +1,10 @@
-package com.portfolio.MarielaNabia;
+package com.portfolio.MN;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MarielaNabiaApplicationTests {
+class MnApplicationTests {
 
 	@Test
 	void contextLoads() {
