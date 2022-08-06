@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { usuario } from 'src/app/model/usuario.model';
 import { UsuarioService } from 'src/app/service/usuario.service';
 
-var dato = usuario
 
 @Component({
   selector: 'app-home',
@@ -16,9 +16,10 @@ export class HomeComponent implements OnInit {
   constructor(public usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
-    this.usuarioService.getUsuario().subscribe(data => {this.usuario = data});
-   
+
+   this.usuarioService.getUsuario().subscribe(data => {this.usuario = data});
+    
   }
-console = console.log(dato)
+  //console = console.log( this.usuarioService.getUsuario().subscribe(data => {this.usuario = data}))
 
 }

@@ -1,6 +1,6 @@
 package com.portfolio.MN.Controller;
 
-import com.portfolio.MN.Entity.Usuario;
+import com.portfolio.MN.Entity.UsuarioPerso;
 import com.portfolio.MN.Interface.IUsuarioService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,13 +22,13 @@ public class UsuarioController {
     @Autowired IUsuarioService iusuarioService;
     
     @GetMapping("usuario/traer")
-    public List<Usuario> getUsuario(){
+    public List<UsuarioPerso> getUsuario(){
         return iusuarioService.getUsuario();
     }
     
     @PostMapping("/usuario/crear")
-    public String createUsuario(@RequestBody Usuario usuario){
-        iusuarioService.saveUsuario(usuario);
+    public String createUsuario(@RequestBody UsuarioPerso usuarioPerso){
+        iusuarioService.saveUsuario(usuarioPerso);
         return "El usuario fue creado con éxito";
     }
     
@@ -39,21 +39,22 @@ public class UsuarioController {
     }
     
     @PutMapping("/usuario/editar/{id}")
-    public Usuario editUsuario(@PathVariable Long id,
+    public UsuarioPerso editUsuario(@PathVariable Long id,
                                @RequestParam("nombre") String nuevoNombre,
                                @RequestParam("apellido") String nuevoApellido,
                                @RequestParam("imgPerfil") String nuevoImgPerfil){
-        Usuario usuario = iusuarioService.findUsuario(id);
-        usuario.setNombre(nuevoNombre);
-        usuario.setApellido(nuevoApellido);
-        usuario.setImgPerfil(nuevoImgPerfil);
+        UsuarioPerso usuarioPerso = iusuarioService.findUsuario(id);
+        usuarioPerso.setNombre(nuevoNombre);
+        usuarioPerso.setApellido(nuevoApellido);
+        usuarioPerso.setImgPerfil(nuevoImgPerfil);
         
-        iusuarioService.saveUsuario(usuario);
-        return usuario;
+        iusuarioService.saveUsuario(usuarioPerso);
+        return usuarioPerso;
     }
-    @GetMapping("/usuario/traer/perfil")
-    public Usuario findUsuario(){
+    @GetMapping("/usuario/traer/perfil/{id}")
+    public UsuarioPerso findUsuario(@PathVariable Long id){
         return   iusuarioService.findUsuario((long) 1);
     }
-    
+    //public Usuario findUsuario(){
+    //    return   iusuarioService.findUsuario((long)1);
 }

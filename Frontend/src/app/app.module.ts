@@ -15,6 +15,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FooterComponent } from './components/footer/footer.component';
 import {HttpClientModule} from "@angular/common/http";
+import { ApphomeComponent } from './components/apphome/apphome.component';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import {HttpClientModule} from "@angular/common/http";
     ProyectosComponent,
     LoginComponent,
     ContactoComponent,
-    FooterComponent
+    FooterComponent,
+    ApphomeComponent,
+
   ],
   imports: [
     BrowserModule,
