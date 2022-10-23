@@ -3,10 +3,11 @@
     <div class="container">
       <div class="section-title"  *ngFor="let persona of persona">
         <h2>Sobre mi</h2>
-        <p>{{persona.descripE}}</p>
+        <div class="linea"><p></p></div>
+        <p class="m-3">{{persona.descripE}}</p>
         
            <p>
-          <button class="btn btn-light"  *ngIf="isLogged" routerLink="/editusuarioperfil/{{persona.id}}" > 
+          <button class="btn btn-light ms-3"  *ngIf="isLogged" routerLink="/editusuarioperfil/{{persona.id}}" > 
              <i class="bi bi-pencil-fill"></i></button></p>
           
       </div>

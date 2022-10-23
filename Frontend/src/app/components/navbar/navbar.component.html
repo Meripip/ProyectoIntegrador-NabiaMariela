@@ -5,7 +5,7 @@
             <img src="{{persona.imgE}}" alt="Ingrese una imagen" class="img-fluid imgperfil"> 
             <br>
            
-            <button class="btn btn-light" *ngIf="isLogged" routerLink="/editusuarionavbar/{{persona.id}}" > 
+            <button class="btn btn-light p-2 m-2 " *ngIf="isLogged" routerLink="/editusuarionavbar/{{persona.id}}" > 
               <i class="bi bi-pencil-fill"></i>
             </button>
         
@@ -29,7 +29,9 @@
          alt="Linkedin logo">
     </a> 
             </div>
-            <ul class="nav flex-column" >
+            <div class="linea"><p></p></div>
+            <div class=" col-md-12 col-lg-12 text-center" >
+            <ul class="nav flex-column " >
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#" style="color: black;">Home</a>
               </li>
@@ -55,6 +57,7 @@
                 <a class="nav-link disabled" style="color: black;"><i class="bi bi-pencil-square"></i></a>
               </li> -->
             </ul>
+          </div>
 
            
              <!-- <div>

@@ -2,3 +2,26 @@
     padding-left: 25%;
 margin-top: 2rem;
 }
+
+.linea{
+    margin-top: 0%;
+    margin-bottom: 1rem;
+     height: 1vh;
+     background: linear-gradient( to right, rgb(12, 241, 12), blue ); 
+    }   
+
+img{
+   height: 50%;
+   width: 100%;
+   margin: 0%;
+   padding: 0%;
+
+    }
+ .card-body  { 
+height: 25%;
+}
+
+#lala  { 
+background-color: rgba(235, 226, 226, 0.938);
+padding: 0%;
+    }

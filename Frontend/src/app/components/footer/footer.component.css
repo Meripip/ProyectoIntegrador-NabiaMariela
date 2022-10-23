@@ -1,8 +1,11 @@
 footer{
     padding-left: 25%;
     margin-top: 2rem;
-    background-color: black;
-    color: azure;
+    background: linear-gradient( to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.171)
+    ),url(https://www.wallpaperuse.com/wallp/83-838364_m.jpg) ;
+     color: azure;
 
     }
 

@@ -3,10 +3,11 @@
 
       <div class="section-title">
         <h2>Habilidades</h2>
-        <p>Hard & Soft Skills</p>
+        <div class="linea"><p></p></div>
+        <p class="m-3">Hard & Soft Skills</p>
       </div>
       <div routerLink="/nuevoskill"  *ngIf="isLogged"> 
-        <button type="button" class="btn btn-dark">
+        <button type="button" class="btn btn-dark p-1 m-3">
             Agregar Skill
         </button>
       </div>
@@ -25,7 +26,7 @@
               [outerStrokeWidth]="16"
               [innerStrokeWidth]="8"
               [outerStrokeColor]="'greenyellow'"
-              [innerStrokeColor]="'#C7E596'"
+              [innerStrokeColor]="'rgba(235, 226, 226, 0.938)'"
               [animation]="true"
               [animationDuration]="600"
                   ></circle-progress>     

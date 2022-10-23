@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+
+
+
 :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
@@ -19,10 +23,17 @@
     color: rgb(240, 250, 255);
     width: 100%;
     min-height: 100vh;
-    background-image:  url(https://www.wallpaperuse.com/wallp/83-838364_m.jpg);
-    background-position: center;
-    object-fit:contain; 
-    background-size: cover; 
+    /* background-image:  url(https://www.wallpaperuse.com/wallp/83-838364_m.jpg);  */
+  /*  background: radial-gradient( rgba(12, 241, 12, 0.199), rgba(0, 0, 255, 0.171)), url(https://www.wallpaperuse.com/wallp/83-838364_m.jpg) ;
+    */ 
+    background: radial-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.171)
+    ),url(https://www.wallpaperuse.com/wallp/83-838364_m.jpg) ;
+   
+   background-position:top;
+    /*  object-fit:scale-down;   */
+    background-size:cover; 
     text-align: center;
     flex-grow: 1;
     padding: 10%;
@@ -31,10 +42,19 @@
 
 
 
-h1{
-
-  font-family: sans-serif;
+/* h1{
+margin: auto 25% auto 15%;
+  font-family: cursive;
 	perspective: 1000px; 
+  color: linear-gradient(blue,white,greenyellow);
+  font-size: 400%;
+} */
+h1{  
+  margin: auto 25% auto 15%;
+  font-family:cursive;
+  perspective: 1000px; 
+  font-size: 400%;
+  -webkit-text-stroke: 2px black;
 }
 
   .toolbar {
@@ -76,6 +96,8 @@ h1{
     transition: all 0.2s ease-in-out;
     line-height: 24px;
   }
+
+ 
 
   .card-container .card:not(.highlight-card) {
     cursor: pointer;
@@ -149,6 +171,11 @@ h1{
     margin-left: 4px;
     font-weight: 600;
   }
+  #boton{
+    width: 8vw;
+    font-size: 80%;
+  
+  }
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
@@ -177,4 +204,29 @@ h1{
       display: none;
       visibility: hidden;
     }
+    h1{
+      margin: auto 25% auto 15%;
+        font-family: cursive;
+        perspective: 1000px; 
+        font-size: 200%;
+      }
+      .toolbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        font-weight: 600;
+        font-size: 80%;
+        
+      }
+      #boton{
+        height: 40px;
+        font-size: 80%;
+      
+      }
   }

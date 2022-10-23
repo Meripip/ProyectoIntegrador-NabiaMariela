@@ -3,7 +3,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: black;
+    background:  rgb(11, 11, 26); 
+   
+   
     margin: 1REM 0rem;
     height: 45px;
     padding: 0%;
@@ -14,11 +16,16 @@
     cursor:default;
     color: greenyellow;
 }
-
+.linea{
+    margin-top: 0%;
+    margin-bottom: 1rem;
+     height: 1vh;
+     background: linear-gradient( to right, blue, rgb(12, 241, 12) ); 
+    }   
 nav{
-    background-color: rgba(235, 226, 226, 0.938); 
+   /*  background-color: rgba(235, 226, 226, 0.938);  */
 
-
+   background-image:linear-gradient(rgba(143, 136, 136, 0.253), rgba(255, 255, 255, 0.144)) ,url(https://static.vecteezy.com/system/resources/thumbnails/000/474/458/small/abstract_connections_banner_design_2203.jpg);
    border: 0.1rem solid black;
    width: 20%;
    padding: 0.5rem 0.5rem;
@@ -40,5 +47,40 @@ nav a{
 .imgperfil{
     height: 20vh;
     border-radius: 100%;
+ 
     box-shadow: 2px 2px 2px 2px rgba(172, 255, 47, 0.486);
 }
+
+@media screen and (max-width: 575px) {
+    
+
+    nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+      height: 400px;
+       margin: 0%;
+       padding: 0%;
+       font-size: 80%;
+     
+       
+    }
+    nav ul li{
+        
+        margin-top: 1rem;
+       padding: 0%;
+    }
+
+    nav ul li a{
+        
+        margin: 0%;
+       padding: 0%;
+    }
+    .imgperfil{
+        height: 12vh;
+        border-radius: 100%;
+     
+        box-shadow: 2px 2px 2px 2px rgba(172, 255, 47, 0.486);
+    }
+
+  }

@@ -1,50 +1,79 @@
-<!--  <section id="proyectos" class="proyectos">
-    <div class="container">
-      <div class="section-title">
-        <h2>Proyectos</h2>
-      </div>
-      <div class="row" *ngFor="let Proyecto of proyecto">
-        <span routerLink="/nuevoproyec" *ngIf="isLogged">
-        <button type="button" class="btn btn-dark">
-            Agregar Proyecto
-        </button> </span>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-           <br>
-            <h4>{{Proyecto.nombreE}}</h4> 
-            <p><em>{{Proyecto.descripcionE}} </em></p>
-            <img src="{{Proyecto.imgE}}" class="card-img-top" alt="fotoproyecto">
-          </div>         
-        </div>    
-  </div>
-  </section>  -->
+<!-- <section id="proyectos" class="proyectos">
+  <div class="container">
 
-
- <section id="proyectos" class="proyectos">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Proyectos</h2>
-      </div>
+    <div class="section-title">
+      <h2>Proyectos</h2>
+      <div class="linea"><p></p></div>
+    </div>
     <span routerLink="/nuevoproyec" *ngIf="isLogged">
-        <button type="button" class="btn btn-dark">
-            Add+
-        </button>
-        <br><br>
+      <button type="button" class="btn btn-dark p-1 m-3">
+        Add+
+      </button>
     </span>
-    <div class="card" id="proye" style="width: 18rem;" *ngFor="let Proyecto of proyecto">
-        <img src="{{Proyecto.imgE}}" class="card-img-top" alt="fotoproyecto">
-        <div class="card-body">
-            <h5 class="card-title">{{Proyecto.nombreE}}</h5>
-            <p class="card-text">{{Proyecto.descripcionE}}</p>
-            <a href="{{Proyecto.urlE}}" target="_blank" class="btn btn-outline-primary">Link</a>
-            <span *ngIf="isLogged">
-                <button class="btn btn-light" routerLink="./editproyec/{{Proyecto.id}}">
-                    <i class="bi bi-pencil-fill"></i></button>
-            </span>
-            <span *ngIf="isLogged">
-                <button class="btn btn-light" (click)="delete(Proyecto.id)">
-                    <i class="bi bi-trash-fill"></i></button>
-            </span>
-          
+
+
+    <div class="row d-flex align-items-center justify-content-center h-100">
+
+      <div class=" m-3 col-sm-4 col-md-4 col-lg-6" style="width: 18rem;" id="cards" *ngFor="let Proyecto of proyecto">
+
+        <div class="img-fluid">
+          <img src="{{Proyecto.imgE}}" alt="fotoproyecto">
         </div>
-    </div> 
+        <div class="card-body" id="cardbody">
+          <h5 class="card-title">{{Proyecto.nombreE}}</h5>
+          <p class="card-text">{{Proyecto.descripcionE}}</p>
+
+
+          <a href="{{Proyecto.urlE}}" target="_blank" class="btn btn-outline-primary">Ver</a>
+          <span class="ms-2" *ngIf="isLogged">
+            <button class="btn btn-light" routerLink="./editproyec/{{Proyecto.id}}">
+              <i class="bi bi-pencil-fill"></i></button>
+            <button class="btn btn-light" (click)="delete(Proyecto.id)">
+              <i class="bi bi-trash-fill"></i></button>
+          </span>
+
+        </div>
+
+      </div>
+    </div>
+  </div> 
+</section>
+ -->
+<section id="proyectos" class="proyectos">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Proyectos</h2>
+      <div class="linea">
+        <p></p>
+      </div>
+    </div>
+    <span routerLink="/nuevoproyec" *ngIf="isLogged">
+      <button type="button" class="btn btn-dark p-1 m-3">
+        Add+
+      </button>
+    </span>
+    <div class="row">
+      <div class="card m-3" style="width: 18rem;" id="lala"  *ngFor="let Proyecto of proyecto">
+        <img class="card-img-top" src="{{Proyecto.imgE}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{Proyecto.nombreE}}</h5>
+          <p class="card-text">{{Proyecto.descripcionE}}</p>
+        </div>
+
+        <div class="card-body">
+          <a href="{{Proyecto.urlE}}" class="card-link mb-2">Ver</a>
+
+          <div class="text-center" *ngIf="isLogged">
+            <button class="btn btn-light" routerLink="./editproyec/{{Proyecto.id}}">
+              <i class="bi bi-pencil-fill"></i></button>
+            <button class="btn btn-light" (click)="delete(Proyecto.id)">
+              <i class="bi bi-trash-fill"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>

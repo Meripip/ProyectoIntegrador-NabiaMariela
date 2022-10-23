@@ -3,7 +3,11 @@
 }
 
 div{
-    background-color: beige;
+    background: linear-gradient( to right,
+    
+    rgba(255, 255, 255, 0.308),rgba(255, 255, 255, 0)
+    ),url(https://www.wallpaperuse.com/wallp/83-838364_m.jpg) ;
+    color: aliceblue;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
