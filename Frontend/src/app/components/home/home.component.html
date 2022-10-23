@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meri👩</title>
+</head>
+<body>
+  
+  <app-navbar></app-navbar>
+<!-- Toolbar -->
+
+
+<div class="toolbar" role="banner">
+  <img
+    width="100"
+    alt="Argentina Programa Logo"
+    src="../assets/argprograma.png"
+  />
+  <span>Argentina Programa #YoProgramo</span>
+    <!-- <div class="spacer"> </div> -->
+    
+        <a class="nav-link"  href="../login" role="button" *ngIf="!isLogged"> <img
+          id="user-logo" 
+          width="40" height="40" fill="none" 
+          viewBox="0 0 400 400"
+           src="../../../assets/userBco.png" 
+           alt="user logo"> </a> 
+           
+         <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesion</button>
+       
+</div>
+   
+
+    <div class="cointerner" id="hero">
+      <div class="row" *ngFor="let persona of persona">
+        <!-- <h1 >Mariela Nabia</h1> -->
+        <h1 >{{persona.nombreE}} {{persona.apellidoE}}</h1>
+        <p>I'm a passionate <span class="typed" data-typed-items="Developer"><b>
+          <i style="color:greenyellow; font-size: xx-large; font-family:cursive; margin-left: 15px;" >
+            <u>Developer</u> {{persona.tituloE}}</i></b> </span>
+            <button *ngIf="isLogged" class="btn btn-outline-light col-sm-2 col-md-1 col-lg-1" routerLink="/editusuario/{{persona.id}}" ><i class="bi bi-pencil-fill"></i></button></p>
+        <!-- <a class="nav-link disabled"><i class="bi bi-pencil-square"></i></a> -->
+       
+
+     </div>
+        
+      </div>  <!-- End Hero -->
+
+      
+</body>
+</html>
+
+

@@ -1,0 +1,66 @@
+<section id="skills" class="skills section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Habilidades</h2>
+        <p>Hard & Soft Skills</p>
+      </div>
+      <div routerLink="/nuevoskill"  *ngIf="isLogged"> 
+        <button type="button" class="btn btn-dark">
+            Agregar Skill
+        </button>
+      </div>
+<div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="row skills-content text-center col-sm-4 col-md-4 col-lg-4"  *ngFor="let Skills of skills" >
+           <div class="col-lg-6" data-aos="fade-up" >   
+              <circle-progress
+              [percent]="Skills.progreso"
+              [title]="Skills.nombre"
+              [titleColor]="'rgb(0, 0, 0)'"
+              [radius]="90"
+              [imageSrc]="Skills.img"
+              [showImage]="true"
+              [imageHeight]="80"
+              [imageWidth]="80"              
+              [outerStrokeWidth]="16"
+              [innerStrokeWidth]="8"
+              [outerStrokeColor]="'greenyellow'"
+              [innerStrokeColor]="'#C7E596'"
+              [animation]="true"
+              [animationDuration]="600"
+                  ></circle-progress>     
+            </div>
+            <div  *ngIf="isLogged"> 
+              <button class="btn btn-light" routerLink="/editskill/{{Skills.id}}">
+                 <i class="bi bi-pencil-fill"></i></button>
+           
+               <button class="btn btn-light" (click)="delete(Skills.id)">
+                 <i class="bi bi-trash-fill"></i></button>
+           </div>  
+      </div>
+    </div>
+    </div>
+   
+
+  </section><!-- End Skills Section -->
+
+  <!--   <div class="progress">
+   <span class="skill">HTML <i class="val">100% </i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div> 
+          </div>
+
+          <div class="progress">
+            <span class="skill">CSS <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">JavaScript <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>-->
