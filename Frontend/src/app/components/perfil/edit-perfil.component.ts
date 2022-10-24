@@ -9,6 +9,7 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./edit-perfil.component.css']
 })
 export class EditPerfilComponent implements OnInit {
+
   usuario: Persona = null;
 
   constructor(
