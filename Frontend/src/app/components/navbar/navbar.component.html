@@ -4,11 +4,11 @@
            <!--  <img src="../../../assets/MeriCV.jpeg" alt="Ingrese una imagen" class="img-fluid imgperfil"> -->
             <img src="{{persona.imgE}}" alt="Ingrese una imagen" class="img-fluid imgperfil"> 
             <br>
-           
+            <div id="Bot">
             <button class="btn btn-light p-2 m-2 " *ngIf="isLogged" routerLink="/editusuarionavbar/{{persona.id}}" > 
               <i class="bi bi-pencil-fill"></i>
             </button>
-        
+            </div>
             <!-- <h3>Mariela Nabia</h3> -->
             <div class="socials">         
                  <a aria-label="Angular on github" target="_blank" rel="noopener" href="https://github.com/Meripip/ProyectoIntegrador-NabiaMariela" title="github">   
@@ -36,22 +36,22 @@
                 <a class="nav-link active" aria-current="page" href="#" style="color: black;">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="sobreMi.html" style="color: black;">Sobre mi</a>
+                <a class="nav-link" href="" routerLink="perfil" style="color: black;">Sobre mi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="experiencia.html" style="color: black;">Experiencia</a>
+                <a class="nav-link" href="" routerLink="expe" style="color: black;">Experiencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="educación.html" style="color: black;">Educación</a>
+                <a class="nav-link" href=""  routerLink="edu" style="color: black;">Educación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="proyectos.html" style="color: black;">Habilidades</a>
+                <a class="nav-link"  href=""  routerLink="hys"  style="color: black;">Habilidades</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="proyectos.html" style="color: black;">Proyectos</a>
+                <a class="nav-link"  href=""  routerLink="proye"  style="color: black;">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="contacto.html" style="color: black;">Contacto</a>
+                <a class="nav-link"  href=""  routerLink="contacto"  style="color: black;">Contacto</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link disabled" style="color: black;"><i class="bi bi-pencil-square"></i></a>

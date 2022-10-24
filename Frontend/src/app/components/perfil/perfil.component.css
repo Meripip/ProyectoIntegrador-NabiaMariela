@@ -2,7 +2,11 @@
  border-bottom: 0.1rem solid linear-gradient( to right, rgb(12, 241, 12), white, blue );
 margin-bottom: 0%;
 } */
-
+/* * {padding: 0%;
+    margin: 0%;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/007/629/351/original/colorful-seamless-hexagon-pattern-background-free-vector.jpg); 
+    object-fit:contain; 
+     background-size:contain; } */
 
 #about{
     padding-left: 25%;

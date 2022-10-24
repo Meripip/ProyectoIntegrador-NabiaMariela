@@ -64,10 +64,10 @@
         <div class="card-body">
           <a href="{{Proyecto.urlE}}" class="card-link mb-2">Ver</a>
 
-          <div class="text-center" *ngIf="isLogged">
-            <button class="btn btn-light" routerLink="./editproyec/{{Proyecto.id}}">
+          <div class="text-center " *ngIf="isLogged">
+            <button class="btn btn-light ms-2" routerLink="./editproyec/{{Proyecto.id}}">
               <i class="bi bi-pencil-fill"></i></button>
-            <button class="btn btn-light" (click)="delete(Proyecto.id)">
+            <button class="btn btn-light ms-2" (click)="delete(Proyecto.id)">
               <i class="bi bi-trash-fill"></i></button>
           </div>
         </div>

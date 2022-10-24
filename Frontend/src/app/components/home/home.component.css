@@ -174,8 +174,16 @@ h1{
   #boton{
     width: 8vw;
     font-size: 80%;
+    text-align: right;
   
   }
+  #Bot{
+    margin: 0% !important;
+    padding: 0%;
+    text-align: right;
+  }
+
+
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {

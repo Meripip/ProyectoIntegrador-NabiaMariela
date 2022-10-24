@@ -1,0 +1,17 @@
+.form-group{
+    margin: 10px;
+    
+}
+
+div{
+    background: linear-gradient( to right,
+    
+    rgba(255, 255, 255, 0.308),rgba(255, 255, 255, 0)
+    ),url(https://www.wallpaperuse.com/wallp/83-838364_m.jpg) ;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    color: aliceblue;
+}
