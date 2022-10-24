@@ -9,3 +9,23 @@ footer{
 
     }
 
+
+    @media screen and (max-width: 767px) {
+        img {
+            height: 20vh;
+            width: 20vw;
+        }
+
+    }
+
+
+    @media screen and (max-width: 575px) {
+
+        img {
+            height: 20vh;
+            width: 20vw;
+        }
+
+       
+
+    }

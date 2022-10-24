@@ -218,7 +218,7 @@ h1{
         font-family: cursive;
         perspective: 1000px; 
         font-size: 200%;
-        -webkit-text-stroke: 3px blue;
+        -webkit-text-stroke: 1px blue;
       }
       .toolbar {
         position: absolute;
@@ -237,7 +237,7 @@ h1{
       #boton{
         height: 40px;
         font-size: 80%;
-        text-align: center;
+        text-align: left;
         color: gray;
       
       }
