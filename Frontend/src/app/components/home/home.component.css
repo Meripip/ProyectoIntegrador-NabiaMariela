@@ -218,7 +218,7 @@ h1{
         font-family: cursive;
         perspective: 1000px; 
         font-size: 200%;
-        -webkit-text-stroke: 1px blue;
+        -webkit-text-stroke: 0.1rem blue;
       }
       .toolbar {
         position: absolute;
